@@ -1,0 +1,40 @@
+1. 3  #as this is a set and wil only take unique vaues- apple, banana, orange.
+2. 'active' #Since key='status' is not present in dictionary, it is taking default value mentioned as second argument in get function.
+3. 
+def calcuate_average_grade(grades):
+    sum=0
+    for key in grades:
+        sum+=grades.get(key)
+
+    if len(grades)==0:
+        return 0.0
+    else:
+        return sum/len(grades)
+    
+
+marks={
+    'Math':90,
+    'Science':88,
+    'History':92,
+    'English':95
+}
+
+marksnull={}
+
+print(calcuate_average_grade(marks)) #91.25
+print(calcuate_average_grade(marksnull)) #0.0
+
+
+4.
+
+def find_common_tags(user1_tags,user2_tags):
+    set1=set(user1_tags)
+    set2=set(user2_tags)
+    common_tags=set1.intersection(set2)
+    return(common_tags)
+
+user1 = ['python', 'data science', 'machine learning', 'web dev']
+user2 = ['python', 'web dev', 'mobile dev', 'ui/ux']
+
+find_common_tags(user1,user2) #{'python', 'web dev'}
+
