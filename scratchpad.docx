@@ -38,3 +38,102 @@ user2 = ['python', 'web dev', 'mobile dev', 'ui/ux']
 
 find_common_tags(user1,user2) #{'python', 'web dev'}
 
+
+5.
+
+def update_stock(inventory,product_name,new_stock_count):
+    
+    for i in inventory:
+        #print(i)
+        if i.get('name')==product_name:
+            i['stock']=new_stock_count
+
+    return inventory
+
+
+inventory=[
+    {'name': 'Laptop', 'price': 1200, 'stock': 45},
+    {'name': 'Mouse', 'price': 25, 'stock': 150},
+    {'name': 'Keyboard', 'price': 75, 'stock': 80}
+]
+product_to_update = 'Car'
+new_stock = 125
+update_stock(inventory,product_to_update,new_stock)
+    
+6.
+
+def word_frequency(text):
+    word_list=text.split()
+    #print(word_list)
+    freq_dict={}
+
+    for word in word_list:
+        count=0
+        #print(word)
+        if word.lower() in freq_dict:
+            freq_dict[word.lower()]+=1
+        else:
+            freq_dict[word.lower()]=1
+
+    return freq_dict
+
+
+text_block = "The quick brown fox jumps over the lazy dog The dog was not amused"   
+word_frequency(text_block) 
+
+
+7.
+
+7.
+
+def find_eligible_students(students_list, required_prerequisites):
+
+    eligible_students=[]
+
+    for student in students_list:
+        #print(sorted(student['completed_courses']))
+        #
+        # print(student['status'])
+        #print(sorted(required_prerequisites))
+        if (student['gpa']>=3.5 and student['status']!='On Probation' and all(course in student['completed_courses'] for course in required_prerequisites)):
+            print(student['name'])
+            eligible_students.append(student['name'])
+
+    return sorted(eligible_students)
+
+students = [
+    {
+        'name': 'lice',
+        'gpa': 3.8,
+        'status': 'Good Standing',
+        'completed_courses': {'CS101', 'MA101', 'EN101', 'CS201'}
+    },
+    {
+        'name': 'Bob',
+        'gpa': 3.4,
+        'status': 'Good Standing',
+        'completed_courses': {'CS101', 'MA101', 'PH101', 'CS201'}
+    },
+    {
+        'name': 'Charlie',
+        'gpa': 3.9,
+        'status': 'Good Standing',
+        'completed_courses': {'CS101', 'MA101'}
+    },
+    {
+        'name': 'David',
+        'gpa': 4.0,
+        'status': 'Good Standing',
+        'completed_courses': {'CS101', 'MA101', 'PH101', 'CS201'}
+    },
+    {
+        'name': 'Eve',
+        'gpa': 3.7,
+        'status': 'On Probation',
+        'completed_courses': {'CS101', 'MA101', 'CS201'}
+    }
+]
+
+advanced_course_reqs = {'CS101', 'MA101', 'CS201'}
+find_eligible_students(students,advanced_course_reqs)
+
