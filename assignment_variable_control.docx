@@ -1,0 +1,58 @@
+Question 1: Shipping Cost Calculator
+
+cost = input("What is the total cost of your shopping cart? ")
+total_cost=int(cost)
+if total_cost<100:
+    total_cost+=10
+
+print (f'Your final total is ${total_cost}')
+
+Question 2: NUmber classifier
+
+number=input("Enter a number")
+
+num=int(number)
+
+if num<0:
+    print('The number is negative')
+elif num>0:
+    print('The number is positive')
+else:
+    print('The number is zero')
+
+Question 3: Simple LOgin SYstem
+
+user=input("Enter username")
+pwd=input("Enter password")
+
+if user=='admin' and pwd=='P@ssword123':
+    print('Access Granted')
+else:
+    print('Access Denied')
+
+
+Question 4: Robust BMI calculator and Health classifier
+
+try:
+    height = float(input("Enter your height in meter"))
+    if height <= 0:
+        print("Invalid input. Please enter a positive number.")
+    else:
+        weight = float(input("Enter your weight in Kilogram"))
+        if weight <= 0:
+            print("Invalid input. Please enter a positive number.")
+        else:
+            bmi = weight / (height * height)
+
+            if bmi < 18.5:
+                print("Underweight")
+            elif 18.5 <= bmi <= 24.9:
+                print("Normal weight")
+            elif 25 <= bmi <= 29.9:
+                print("Overweight")
+            else:
+                print("Obese")
+
+except ValueError:
+    print("Invalid input. Please enter a positive number.")
+
