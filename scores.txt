@@ -1,0 +1,4 @@
+Peter,88,92,100
+Jane,95,abc,85,90
+Mike,70
+Liz,,80

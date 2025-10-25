@@ -1,0 +1,9 @@
+INFO::User logged in successfully
+WARNING::Disk space is running low
+ERROR::Database connection failed
+This is a malformed line.
+INFO::Request processed in 20ms
+ERROR::Null pointer exception at module X
+WARNING::API rate limit approaching
+ERROR::
+INFO::User logged out
