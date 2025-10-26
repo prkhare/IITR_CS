@@ -1,0 +1,2 @@
+[console_scripts]
+csvstats-tool = csvstats.cli:main

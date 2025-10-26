@@ -1,0 +1,7 @@
+setup.py
+csvstats.egg-info/PKG-INFO
+csvstats.egg-info/SOURCES.txt
+csvstats.egg-info/dependency_links.txt
+csvstats.egg-info/entry_points.txt
+csvstats.egg-info/requires.txt
+csvstats.egg-info/top_level.txt

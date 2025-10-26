@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: csvstats
+Version: 0.1.0
+Summary: A CLI tool to analyze CSV columns and compute statistics
+Author: Pragya Khare
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
