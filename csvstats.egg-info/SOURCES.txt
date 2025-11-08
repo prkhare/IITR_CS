@@ -1,4 +1,8 @@
+README.md
 setup.py
+csvstats/__init__.py
+csvstats/analyzer.py
+csvstats/cli.py
 csvstats.egg-info/PKG-INFO
 csvstats.egg-info/SOURCES.txt
 csvstats.egg-info/dependency_links.txt
